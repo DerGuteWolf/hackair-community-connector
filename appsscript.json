@@ -1,0 +1,21 @@
+{
+  "timeZone": "UTC",
+  "dependencies": {
+    "libraries": [{
+      "userSymbol": "Moment",
+      "libraryId": "15hgNOjKHUG4UtyZl9clqBbl23sDvWMS8pfDJOyIapZk5RBqwL3i-rlCo",
+      "version": "9"
+    }]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "dataStudio": {
+    "name": "hackair home sensor",
+    "logoUrl": "https://platform.hackair.eu/img/icons/fusion.png",
+    "company": "DerGuteWolf",
+    "companyUrl": "https://github.com/DerGuteWolf/",
+    "addonUrl": "https://github.com/DerGuteWolf/hackair-community-connector",
+    "supportUrl": "https://github.com/DerGuteWolf/hackair-community-connector/issues",
+    "description": "hackair home sensor values",
+    "sources": ["hackair home sensor values"]
+  }  
+}
