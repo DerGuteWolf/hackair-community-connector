@@ -3,9 +3,9 @@ function getAuthType() {
   return response;
 }
 
-function isAdminUser() {
-  return true;
-}
+//function isAdminUser() {
+//  return true;
+//}
 
 // as in received data
 var PM10 = "PM10_AirPollutantValue";
@@ -165,7 +165,7 @@ function getData(request) {
             if (row[1] === valueType && row[2] !== 'nan') {
               var value = Number(row[2]);
               if (value < 100) {
-                var lineMoment = Moment.moment(row[0]);
+                var lineMoment = Moment.moment.utc(row[0], 'YYYY-MM-DD HH:mm:ss');
                 if (!lineMoment.isAfter(currentEnd) && !lineMoment.isBefore(currentStart)) {
                   var hour = lineMoment.hour();
                   hourDataCurrent[hour].sum += value;
